@@ -12,7 +12,11 @@ const port = process.env.PORT || 5001;
 app.use(
   //auth step-2 (step 3 ক্লায়েন্ট সাইটে)
   cors({
-    origin: ['http://localhost:5173'],
+    // origin: ['http://localhost:5173'],
+    origin: [
+      'https://truck-doctor.web.app',
+      'https://truck-doctor.firebaseapp.com/',
+    ],
     credentials: true,
   }),
 );
