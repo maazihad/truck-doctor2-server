@@ -79,7 +79,7 @@ async function run() {
           httpOnly: true,
           secure: true,
           sameSite: 'none',
-          maaAge: 60 * 60 * 24 * 7 * 1000, // 1 week
+          maxAge: 60 * 60 * 24 * 7 * 1000, // 1 week
         })
         .send({ success: true });
     });
